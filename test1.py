@@ -9,6 +9,10 @@ DATA_FILE = "./lastfm-dataset-1K/userid-timestamp-artid-artname-traid-traname.ts
 APP_NAME = "pyspark test 1"
 
 
+def toto():
+    print("TOTO")
+
+
 def main(sc):
     sqlContext = SQLContext(sc)
     raw_data = sc.textFile(DATA_FILE)
